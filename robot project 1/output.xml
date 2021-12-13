@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211213 11:39:31.688" rpa="false" schemaversion="2">
+<suite id="s1" name="Robot Project 1" source="C:\Users\Dell\eclipse-workspace\robot project 1">
+<suite id="s1-s1" name="Test" source="C:\Users\Dell\eclipse-workspace\robot project 1\Test">
+<suite id="s1-s1-s1" name="Testsuite1" source="C:\Users\Dell\eclipse-workspace\robot project 1\Test\Testsuite1.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211213 11:39:38.702" level="INFO">Opening browser 'Chrome' to base url 'https://demo.seleniumeasy.com/'.</msg>
+<status status="PASS" starttime="20211213 11:39:33.880" endtime="20211213 11:39:47.692"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Scenario1">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ClosePopup}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 11:40:16.816" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002C0C43+2493507]
+	Ordinal0 [0x0025A4B1+2073777]
+	Ordinal0 [0x001624D0+1058000]
+	Ordinal0 [0x00157604+1013252]
+	Ordinal0 [0x00157E06+1015302]
+	Ordinal0 [0x001594D5+1021141]
+	Ordinal0 [0x001535E3+996835]
+	Ordinal0 [0x00163820+1062944]
+	Ordinal0 [0x001B47D2+1394642]
+	Ordinal0 [0x001A580B+1333259]
+	Ordinal0 [0x00182314+1188628]
+	Ordinal0 [0x0018316F+1192303]
+	GetHandleVerifier [0x00447BF6+1548950]
+	GetHandleVerifier [0x004F461C+2256060]
+	GetHandleVerifier [0x0034C13B+518107]
+	GetHandleVerifier [0x0034B1E0+514176]
+	Ordinal0 [0x0025F53D+2094397]
+	Ordinal0 [0x00263418+2110488]
+	Ordinal0 [0x00263552+2110802]
+	Ordinal0 [0x0026CE81+2150017]
+	BaseThreadInitThunk [0x75DBFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77547A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77547A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20211213 11:40:04.543" endtime="20211213 11:40:16.818"/>
+</kw>
+<msg timestamp="20211213 11:40:16.824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002C0C43+2493507]
+	Ordinal0 [0x0025A4B1+2073777]
+	Ordinal0 [0x001624D0+1058000]
+	Ordinal0 [0x00157604+1013252]
+	Ordinal0 [0x00157E06+1015302]
+	Ordinal0 [0x001594D5+1021141]
+	Ordinal0 [0x001535E3+996835]
+	Ordinal0 [0x00163820+1062944]
+	Ordinal0 [0x001B47D2+1394642]
+	Ordinal0 [0x001A580B+1333259]
+	Ordinal0 [0x00182314+1188628]
+	Ordinal0 [0x0018316F+1192303]
+	GetHandleVerifier [0x00447BF6+1548950]
+	GetHandleVerifier [0x004F461C+2256060]
+	GetHandleVerifier [0x0034C13B+518107]
+	GetHandleVerifier [0x0034B1E0+514176]
+	Ordinal0 [0x0025F53D+2094397]
+	Ordinal0 [0x00263418+2110488]
+	Ordinal0 [0x00263552+2110802]
+	Ordinal0 [0x0026CE81+2150017]
+	BaseThreadInitThunk [0x75DBFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77547A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77547A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+<msg timestamp="20211213 11:40:16.843" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002C0C43+2493507]
+	Ordinal0 [0x0025A4B1+2073777]
+	Ordinal0 [0x001624D0+1058000]
+	Ordinal0 [0x00157604+1013252]
+	Ordinal0 [0x00157E06+1015302]
+	Ordinal0 [0x001594D5+1021141]
+	Ordinal0 [0x001535E3+996835]
+	Ordinal0 [0x00163820+1062944]
+	Ordinal0 [0x001B47D2+1394642]
+	Ordinal0 [0x001A580B+1333259]
+	Ordinal0 [0x00182314+1188628]
+	Ordinal0 [0x0018316F+1192303]
+	GetHandleVerifier [0x00447BF6+1548950]
+	GetHandleVerifier [0x004F461C+2256060]
+	GetHandleVerifier [0x0034C13B+518107]
+	GetHandleVerifier [0x0034B1E0+514176]
+	Ordinal0 [0x0025F53D+2094397]
+	Ordinal0 [0x00263418+2110488]
+	Ordinal0 [0x00263552+2110802]
+	Ordinal0 [0x0026CE81+2150017]
+	BaseThreadInitThunk [0x75DBFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77547A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77547A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20211213 11:39:47.697" endtime="20211213 11:40:16.844"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClosePopup}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211213 11:40:16.856" endtime="20211213 11:46:07.120"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${AlertsAndModels}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20211213 11:46:07.120" endtime="20211213 11:46:07.121"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AlertsAndModels}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211213 11:46:07.121" endtime="20211213 11:46:07.121"/>
+</kw>
+<status status="FAIL" starttime="20211213 11:39:47.696" endtime="20211213 11:46:07.122">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002C0C43+2493507]
+	Ordinal0 [0x0025A4B1+2073777]
+	Ordinal0 [0x001624D0+1058000]
+	Ordinal0 [0x00157604+1013252]
+	Ordinal0 [0x00157E06+1015302]
+	Ordinal0 [0x001594D5+1021141]
+	Ordinal0 [0x001535E3+996835]
+	Ordinal0 [0x00163820+1062944]
+	Ordinal0 [0x001B47D2+1394642]
+	Ordinal0 [0x001A580B+1333259]
+	Ordinal0 [0x00182314+1188628]
+	Ordinal0 [0x0018316F+1192303]
+	GetHandleVerifier [0x00447BF6+1548950]
+	GetHandleVerifier [0x004F461C+2256060]
+	GetHandleVerifier [0x0034C13B+518107]
+	GetHandleVerifier [0x0034B1E0+514176]
+	Ordinal0 [0x0025F53D+2094397]
+	Ordinal0 [0x00263418+2110488]
+	Ordinal0 [0x00263552+2110802]
+	Ordinal0 [0x0026CE81+2150017]
+	BaseThreadInitThunk [0x75DBFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77547A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77547A6E+238]
+	(No symbol) [0x00000000]
+</status>
+</test>
+<status status="FAIL" starttime="20211213 11:39:32.102" endtime="20211213 11:46:07.125"/>
+</suite>
+<status status="FAIL" starttime="20211213 11:39:32.087" endtime="20211213 11:46:07.128"/>
+</suite>
+<status status="FAIL" starttime="20211213 11:39:31.989" endtime="20211213 11:46:07.132"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot Project 1">Robot Project 1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">Robot Project 1.Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Testsuite1">Robot Project 1.Test.Testsuite1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211213 11:40:16.824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=96.0.4664.93)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002C0C43+2493507]
+	Ordinal0 [0x0025A4B1+2073777]
+	Ordinal0 [0x001624D0+1058000]
+	Ordinal0 [0x00157604+1013252]
+	Ordinal0 [0x00157E06+1015302]
+	Ordinal0 [0x001594D5+1021141]
+	Ordinal0 [0x001535E3+996835]
+	Ordinal0 [0x00163820+1062944]
+	Ordinal0 [0x001B47D2+1394642]
+	Ordinal0 [0x001A580B+1333259]
+	Ordinal0 [0x00182314+1188628]
+	Ordinal0 [0x0018316F+1192303]
+	GetHandleVerifier [0x00447BF6+1548950]
+	GetHandleVerifier [0x004F461C+2256060]
+	GetHandleVerifier [0x0034C13B+518107]
+	GetHandleVerifier [0x0034B1E0+514176]
+	Ordinal0 [0x0025F53D+2094397]
+	Ordinal0 [0x00263418+2110488]
+	Ordinal0 [0x00263552+2110802]
+	Ordinal0 [0x0026CE81+2150017]
+	BaseThreadInitThunk [0x75DBFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77547A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77547A6E+238]
+	(No symbol) [0x00000000]
+</msg>
+</errors>
+</robot>
