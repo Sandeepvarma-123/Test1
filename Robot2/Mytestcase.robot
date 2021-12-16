@@ -14,4 +14,5 @@ Scenario1
     Click Element   ${ClosePopup}
     Wait Until Element Is Visible   ${AlertsAndModels}
     Click Element   ${AlertsAndModels}
+    Click Element   ${AlertsAndModels}
      
